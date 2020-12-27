@@ -1,1 +1,25 @@
-<title>Bonjour</title>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Surveillance Systeme aquaponique</title>
+ 	
+
+	<script src="justgage-1.2.2/raphael-2.1.4.min.js"></script>
+	<script src="justgage-1.2.2/justgage.js"></script>
+</head>
+
+<body>
+	<h1> Tableau de bord systeme aquaponique</h1>
+	<div id="gauge" class="200x160px"></div>
+
+	<script>
+	var g = new JustGage({
+    	id: "gauge",
+    	value: 67,
+    	min: 0,
+    	max: 100,
+    	title: "Température bassin"
+  	});
+	</script>	
+</body>
+</html>
